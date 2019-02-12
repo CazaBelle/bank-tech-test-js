@@ -3,7 +3,9 @@ describe('Account', function(){
  
 
   beforeEach(function() {    
-    account = new Account();
+    account = new Account
+    
+
   });
 
 
@@ -17,6 +19,14 @@ describe('Account', function(){
       account.depositMoney(100);
       account.withdrawMoney(25);
       expect(account.getBalance()).toEqual(75);
+    })
+  })
+
+  describe('can', function(){
+    it('print a statement', function(){
+      account.depositMoney(150); 
+      account.withdrawMoney(25)
+      expect(account.printStatement()).toEqual('Date || Credit || Debit || Balance ||')
     })
   })
 })

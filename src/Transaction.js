@@ -18,3 +18,4 @@ class Transaction{
     return this.date
   }
 }
+

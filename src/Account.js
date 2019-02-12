@@ -9,11 +9,16 @@ class Account{
   }
 
   depositMoney(value){
-     this.balance = (this.balance + value)
-    // transactions.push(new Transaction(value, "credit", this.balance))
+    this.balance = (this.balance + value)
+    this.transactions.addTransaction(new Transaction(value, "credit", this.balance))
   }
+
   withdrawMoney(value){
     this.balance = (this.balance - value)
-    // transactions.push(new Transaction(value, "debit", this.balance))
+    this.transactions.addTransaction(new Transaction(value, "debit", this.balance))
+  }
+
+  printStatement(){
+    return this.transactions.printHistory()
   }
 }
