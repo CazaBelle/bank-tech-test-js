@@ -1,5 +1,5 @@
 class Transaction{
-  constructor(amount, newBalance, liability, date=Date.now) {
+  constructor(amount, liability, newBalance, date = new Date().toLocaleDateString()) {
     this.amount = amount;
     this.liability = liability;
     this.newBalance = newBalance;
