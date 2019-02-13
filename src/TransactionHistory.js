@@ -13,10 +13,10 @@ class TransactionHistory{
 
 
     printHistory() {
-     let statement = "date || credit || debit || balance"
+     let statement = 'date || credit || debit || balance'
 
        this.transactions.forEach(transaction => {
-        if(transaction.liability === "debit") {
+        if(transaction.liability === 'debit') {
            statement += `\n ${transaction.date} || || ${transaction.amount}.00 || ${transaction.newBalance}.00`
           
           }else{
@@ -24,7 +24,7 @@ class TransactionHistory{
             
           }
         })
-      return statement; 
+      return statement 
     }
 
   }

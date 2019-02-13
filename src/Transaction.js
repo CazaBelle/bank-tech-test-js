@@ -1,9 +1,9 @@
 class Transaction{
   constructor(amount, liability, newBalance, date = new Date().toLocaleDateString()) {
-    this.amount = amount;
-    this.liability = liability;
-    this.newBalance = newBalance;
-    this.date = date;
+    this.amount = amount
+    this.liability = liability
+    this.newBalance = newBalance
+    this.date = date
   }
   getAmount() {
     return this.amount
