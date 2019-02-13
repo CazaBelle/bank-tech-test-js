@@ -1,4 +1,5 @@
 'use strict'
+const { TransactionHistory } = require('../src/TransactionHistory.js')
 
 describe('TransactionHistory', function(){
 var history;

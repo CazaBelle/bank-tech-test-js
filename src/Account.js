@@ -1,8 +1,9 @@
-
+const { TransactionHistory}  = require('./TransactionHistory')
+const { Transaction }  = require('./Transaction')
 class Account{
   constructor(){
     this.balance = 0
-    this.transactions = new TransactionHistory
+    this.transactions = new TransactionHistory();
   }
 
   getBalance() {
@@ -23,3 +24,6 @@ class Account{
     return this.transactions.printHistory()
   }
 }
+
+// var Account = 
+module.exports = { Account }

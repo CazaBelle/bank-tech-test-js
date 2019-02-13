@@ -1,7 +1,9 @@
+const { Transaction } = require('../src/Transaction.js')
+
 describe('Transaction', function(){
 
   beforeEach(function() {
-  transaction = new Transaction(50, 'debit', 1000, '01-01-00');
+    transaction = new Transaction(50, 'debit', 1000, '01-01-00');
    
   });
   describe('knows what', function(){

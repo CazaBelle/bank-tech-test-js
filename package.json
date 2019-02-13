@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nyc jasmine"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,12 @@
   },
   "homepage": "https://github.com/CazaBelle/bank-tech-test-js#readme",
   "devDependencies": {
-    "eslint": "^5.13.0"
-  }
+    "eslint": "^5.13.0",
+    "jasmine": "^3.3.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^2.0.1",
+    "nyc": "^13.2.0"
+  },
+  "dependencies": {}
 }

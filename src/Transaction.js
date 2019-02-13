@@ -1,3 +1,5 @@
+// import { builtinModules } from "module";
+
 class Transaction{
   constructor(amount, liability, newBalance, date = new Date().toLocaleDateString()) {
     this.amount = amount
@@ -18,4 +20,5 @@ class Transaction{
     return this.date
   }
 }
-
+ 
+module.exports = { Transaction }
